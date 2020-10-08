@@ -19,7 +19,7 @@ RUN cd /tmp/ \
 	&& git clone https://github.com/swaggo/swag.git swag-${SWAG_VERSION} \	
 	&& cd swag-${SWAG_VERSION} \
 	&& git checkout v${SWAG_VERSION} \
-	&& make \
+	&& make build \
 	&& cp /tmp/swag-${SWAG_VERSION}/swag /usr/bin/swag \
 	&& rm -r /tmp/swag-${SWAG_VERSION}
 
